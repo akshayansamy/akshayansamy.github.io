@@ -359,14 +359,7 @@ cite { font-style: italic; }
   border: 1px dashed #3a433e;
 }
 
-.split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.timeline, .plain, .honors {
+.timeline, .honors {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -374,9 +367,9 @@ cite { font-style: italic; }
 
 .timeline li, .honors li {
   display: grid;
-  grid-template-columns: 6.5rem minmax(0, 1fr);
+  grid-template-columns: 7.5rem minmax(0, 1fr);
   gap: 1rem;
-  padding-block: 0.75rem;
+  padding-block: 0.85rem;
   border-top: 1px solid var(--line);
 }
 
@@ -385,14 +378,9 @@ cite { font-style: italic; }
   font-variant-numeric: tabular-nums;
 }
 
-.timeline p, .plain li, .honors li, .honors p { margin: 0; }
+.timeline p, .honors li, .honors p { margin: 0; }
 
-.section > h3 { margin-top: 2.2rem; }
-
-.plain li {
-  padding-block: 0.75rem;
-  border-top: 1px solid var(--line);
-}
+.section > h3 { margin-top: 3rem; }
 
 .tools {
   display: grid;
@@ -464,7 +452,7 @@ dialog p { color: var(--gallery-muted); }
 .band :focus-visible { outline-color: #8fd0c6; }
 
 @media (max-width: 800px) {
-  .hero, .split, .figure-empty, .research-list li { grid-template-columns: 1fr; }
+  .hero, .figure-empty, .research-list li { grid-template-columns: 1fr; }
   .research-list li::before,
   .research-list h3,
   .research-list p {
@@ -474,7 +462,7 @@ dialog p { color: var(--gallery-muted); }
   .hero { gap: 2rem; padding-top: 2.5rem; }
   .site-header { align-items: flex-start; flex-direction: column; }
   .nav { justify-content: flex-start; }
-  .timeline li, .honors li { grid-template-columns: 5.2rem minmax(0, 1fr); }
+  .timeline li, .honors li { grid-template-columns: 6.4rem minmax(0, 1fr); }
 }
 
 @media (prefers-reduced-motion: reduce) {
