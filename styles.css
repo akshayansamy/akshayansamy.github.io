@@ -120,7 +120,7 @@ a:hover { color: var(--link-hover); }
   object-fit: cover;
   object-position: center 42%;
   background: #fff;
-  border: 1px solid #f2f3f3;
+  border: 0;
 }
 
 .author-name {
@@ -304,7 +304,8 @@ a:hover { color: var(--link-hover); }
 .figure-empty summary { cursor: pointer; color: var(--heading); }
 
 .site-footer {
-  background: var(--soft);
+  background: #fff;
+  border-top: 1px solid var(--line);
   color: var(--icon);
   font-size: 0.82rem;
 }
