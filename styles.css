@@ -12,7 +12,7 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; color-scheme: light; background: #fff; }
 
 body {
   margin: 0;
@@ -97,17 +97,13 @@ a:hover { color: var(--link-hover); }
   padding-block: 1.75rem 3rem;
 }
 
-.author {
-  display: grid;
-  grid-template-columns: 48px minmax(0, 1fr);
-  gap: 0.85rem;
-  align-items: center;
-}
+.author { display: block; }
 
 .avatar,
 .avatar-img {
-  width: 48px;
-  height: 48px;
+  width: min(168px, 100%);
+  aspect-ratio: 1;
+  height: auto;
   border-radius: 50%;
 }
 
@@ -122,12 +118,13 @@ a:hover { color: var(--link-hover); }
 
 .avatar-img {
   object-fit: cover;
-  border: 1px solid var(--line);
-  padding: 2px;
+  object-position: center 42%;
+  background: #fff;
+  border: 1px solid #f2f3f3;
 }
 
 .author-name {
-  margin: 0;
+  margin: 0.75rem 0 0;
   color: var(--heading);
   font-size: 1.05rem;
   line-height: 1.2;
@@ -349,24 +346,19 @@ dialog img {
 
 @media (min-width: 925px) {
   .shell {
-    grid-template-columns: 210px minmax(0, 1fr);
+    grid-template-columns: 220px minmax(0, 1fr);
     column-gap: 2.75rem;
     align-items: start;
   }
 
   .sidebar { position: sticky; top: 5.2rem; }
 
-  .author {
-    display: block;
-  }
-
   .avatar,
   .avatar-img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
   }
 
-  .author-name { margin-top: 0.8rem; font-size: 1.15rem; }
+  .author-name { font-size: 1.15rem; }
 
   .author-bio { font-size: 0.92rem; }
 
